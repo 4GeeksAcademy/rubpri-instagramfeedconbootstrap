@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>        
+
+  <!--SÍMBOLO INTAGRAM + PALABRA & (fondo de color gris)-->
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-body"><h4><i class="fa-brands fa-instagram fa-xl me-2"></i>Instagram</h4></a>
+      <form class="d-flex" role="search">
+        
+  <!--BOTÓN VERDE "CREATE A NEW POST"-->
+        
+<button type="button" class="btn btn-primary me-4 btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create a new post
+</button>
+
+  <!--MODAL > AL ABRIR EL BOTÓN VERDE"-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <label for="" class="col-form-label"><b>Caption:</b></label>
+        <textarea name="" id="" class="form-control" placeholder="Add the caption of your post here"></textarea>
+      
+        <button type="button" class="btn btn-light mt-2 border" ><i class="bi bi-camera"></i></button>
+        <button type="button" class="btn btn-light mt-2 border" ><i class="bi bi-geo-alt"></i></button>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--DROPDOWN-->
+
+        <div class="dropdown me-5">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu" style="left: auto; right:0;">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>         
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <!--navs & tabs-->
+  <!--2 símbolos-->
+
+  <ul class="nav nav-pills mb-3 mt-3 mx-auto d-flex justify-content-center" id="pills-tab" role="tablist">
+    
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+    </li>
+
+  </ul>
+
+  <!--contenido símbolo izq-->
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      
+      <div class="card-group">
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/867/300/300.jpg?hmac=TL2swloTIX5lSTOeY-d2pw4XeXf1IZUIcnxm_BTMQN4" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/611/300/300.jpg?hmac=EJgvBzCx8e8CIwFeaaLBr3W56RSBPq8uOhwiEdeEMh0" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc" class="card-img img-fluid" alt="...">
+        </div>
+      </div>   
+
+      <div class="card-group">
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/272/300/300.jpg?hmac=KHtUwRENOuDZ4G2XV2m9nesEYNlQqUQ2tr4DEz37_7c" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/418/300/300.jpg?hmac=kzUjV6guqMAwBqut6tr5N8m1k79fZ4GqnuwMzCRD-A4" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/283/300/300.jpg?hmac=9WllejN9Lfy5q7WfmnqcefSPyJCMwhquarTLEENjn_Y" class="card-img img-fluid" alt="...">
+        </div>
+      </div> 
+
+      <div class="card-group">
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/454/300/300.jpg?hmac=9gblO15idYU2LvBoei2401fEvdZzB-lW05kabc5e920" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/809/300/300.jpg?hmac=pY1ro5QXv8h9gdbuiv88ST_iF7fx5Zxlq0-Tyrh-2Y0" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="card m-2">
+          <img src="https://fastly.picsum.photos/id/1077/300/300.jpg?hmac=c7s9EbUHIZn4bUD_xkYc7DndRJGdnkoApLqPmhCqpcg" class="card-img img-fluid" alt="...">
+        </div>
+      </div> 
+
+    </div>
+
+
+  <!--contenido símbolo drch-->
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+      <div class="card mb-3 w-50 mx-auto">
+          <div class="d-flex m-2">
+            <h5 class="card-title">Título del post</h5>
+          <p class="m-2 position-absolute top-0 end-0">1/9</p>
+          </div>
+        <img src="https://fastly.picsum.photos/id/867/300/300.jpg?hmac=TL2swloTIX5lSTOeY-d2pw4XeXf1IZUIcnxm_BTMQN4"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><b>204 Likes</b></p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">2/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/611/300/300.jpg?hmac=EJgvBzCx8e8CIwFeaaLBr3W56RSBPq8uOhwiEdeEMh0"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">3/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/662/300/300.jpg?hmac=bnzTCyD_kx8Rv52mE9pVijWfprRjyAZkPJQTANw95cc"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">4/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/272/300/300.jpg?hmac=KHtUwRENOuDZ4G2XV2m9nesEYNlQqUQ2tr4DEz37_7c"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>457 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">5/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/418/300/300.jpg?hmac=kzUjV6guqMAwBqut6tr5N8m1k79fZ4GqnuwMzCRD-A4"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>1407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">6/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/283/300/300.jpg?hmac=9WllejN9Lfy5q7WfmnqcefSPyJCMwhquarTLEENjn_Y"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>833 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">7/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/454/300/300.jpg?hmac=9gblO15idYU2LvBoei2401fEvdZzB-lW05kabc5e920"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">8/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/809/300/300.jpg?hmac=pY1ro5QXv8h9gdbuiv88ST_iF7fx5Zxlq0-Tyrh-2Y0"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-2 w-50 mx-auto">
+        <div class="d-flex m-2">
+          <h5 class="card-title">Título del post</h5>
+        <p class="m-2 position-absolute top-0 end-0">9/9</p>
+        </div>
+      <img src="https://fastly.picsum.photos/id/1077/300/300.jpg?hmac=c7s9EbUHIZn4bUD_xkYc7DndRJGdnkoApLqPmhCqpcg"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-title"><b>407 Likes</b></p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+    
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
